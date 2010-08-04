@@ -1,0 +1,5 @@
+/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m: In function '-[PhraseTTSAppDelegate application:didFinishLaunchingWithOptions:]':
+/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:37: warning: 'PhraseTTSAppDelegate' may not respond to '-searchTable'
+/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:37: warning: (Messages without a matching method signature
+/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:37: warning: will be assumed to return 'id' and accept
+/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:37: warning: '...' as arguments.)

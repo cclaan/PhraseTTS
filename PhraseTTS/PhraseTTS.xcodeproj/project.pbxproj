@@ -15,6 +15,18 @@
 		2899E5220DE3E06400AC0155 /* PhraseTTSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* PhraseTTSViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* PhraseTTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PhraseTTSViewController.m */; };
+		745CCA2A12086F230019FECD /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 745CCA2512086F230019FECD /* sqlite3.c */; };
+		745CCA2B12086F230019FECD /* sqlite3.def in Resources */ = {isa = PBXBuildFile; fileRef = 745CCA2612086F230019FECD /* sqlite3.def */; };
+		745CCA89120877830019FECD /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CCA82120877830019FECD /* FMDatabaseAdditions.m */; };
+		745CCA8A120877830019FECD /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CCA83120877830019FECD /* FMResultSet.m */; };
+		745CCA8C120877830019FECD /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CCA85120877830019FECD /* FMDatabase.m */; };
+		745CCAA1120879340019FECD /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CCAA0120879340019FECD /* Model.m */; };
+		745CCB10120882D10019FECD /* phrases.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 745CCB0F120882D10019FECD /* phrases.sqlite3 */; };
+		745CCB8B1208A8580019FECD /* SearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 745CCB891208A8570019FECD /* SearchResult.m */; };
+		745CCBD61208B9440019FECD /* phrases.txt in Resources */ = {isa = PBXBuildFile; fileRef = 745CCBD51208B9440019FECD /* phrases.txt */; };
+		74A1CF1B1209BC5E000A6138 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A1CF191209BC5E000A6138 /* SettingsViewController.m */; };
+		74A1CF1C1209BC5E000A6138 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A1CF1A1209BC5E000A6138 /* SettingsViewController.xib */; };
+		74A1CF201209BE4B000A6138 /* settings_tab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74A1CF1F1209BE4B000A6138 /* settings_tab_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +42,26 @@
 		28D7ACF70DDB3853001CB0EB /* PhraseTTSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhraseTTSViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PhraseTTS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhraseTTS_Prefix.pch; sourceTree = "<group>"; };
+		745CCA2512086F230019FECD /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		745CCA2612086F230019FECD /* sqlite3.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sqlite3.def; sourceTree = "<group>"; };
+		745CCA2712086F230019FECD /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		745CCA2812086F230019FECD /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		745CCA80120877830019FECD /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		745CCA81120877830019FECD /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		745CCA82120877830019FECD /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		745CCA83120877830019FECD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		745CCA85120877830019FECD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		745CCA86120877830019FECD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		745CCA9F120879340019FECD /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		745CCAA0120879340019FECD /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		745CCB0F120882D10019FECD /* phrases.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phrases.sqlite3; sourceTree = "<group>"; };
+		745CCB891208A8570019FECD /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
+		745CCB8A1208A8570019FECD /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		745CCBD51208B9440019FECD /* phrases.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = phrases.txt; path = phrases/phrases.txt; sourceTree = "<group>"; };
+		74A1CF181209BC5E000A6138 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		74A1CF191209BC5E000A6138 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		74A1CF1A1209BC5E000A6138 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		74A1CF1F1209BE4B000A6138 /* settings_tab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings_tab_icon.png; path = media/settings_tab_icon.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* PhraseTTS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PhraseTTS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +86,9 @@
 				1D3623250D0F684500981E51 /* PhraseTTSAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* PhraseTTSViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* PhraseTTSViewController.m */,
+				74A1CF181209BC5E000A6138 /* SettingsViewController.h */,
+				74A1CF191209BC5E000A6138 /* SettingsViewController.m */,
+				74A1CF1A1209BC5E000A6138 /* SettingsViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -81,6 +116,12 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				745CCB891208A8570019FECD /* SearchResult.m */,
+				745CCB8A1208A8570019FECD /* SearchResult.h */,
+				745CCA9F120879340019FECD /* Model.h */,
+				745CCAA0120879340019FECD /* Model.m */,
+				745CCA7F120877830019FECD /* DB */,
+				745CCA2312086F230019FECD /* sqlite-amalgamation-3_7_0 */,
 				32CA4F630368D1EE00C91783 /* PhraseTTS_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -90,6 +131,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				74A1CF1F1209BE4B000A6138 /* settings_tab_icon.png */,
+				745CCBD51208B9440019FECD /* phrases.txt */,
+				745CCB0F120882D10019FECD /* phrases.sqlite3 */,
 				2899E5210DE3E06400AC0155 /* PhraseTTSViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* PhraseTTS-Info.plist */,
@@ -105,6 +149,30 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		745CCA2312086F230019FECD /* sqlite-amalgamation-3_7_0 */ = {
+			isa = PBXGroup;
+			children = (
+				745CCA2512086F230019FECD /* sqlite3.c */,
+				745CCA2612086F230019FECD /* sqlite3.def */,
+				745CCA2712086F230019FECD /* sqlite3.h */,
+				745CCA2812086F230019FECD /* sqlite3ext.h */,
+			);
+			path = "sqlite-amalgamation-3_7_0";
+			sourceTree = "<group>";
+		};
+		745CCA7F120877830019FECD /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				745CCA80120877830019FECD /* FMDatabase.h */,
+				745CCA81120877830019FECD /* FMDatabaseAdditions.h */,
+				745CCA82120877830019FECD /* FMDatabaseAdditions.m */,
+				745CCA83120877830019FECD /* FMResultSet.m */,
+				745CCA85120877830019FECD /* FMDatabase.m */,
+				745CCA86120877830019FECD /* FMResultSet.h */,
+			);
+			name = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +219,11 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* PhraseTTSViewController.xib in Resources */,
+				745CCA2B12086F230019FECD /* sqlite3.def in Resources */,
+				745CCB10120882D10019FECD /* phrases.sqlite3 in Resources */,
+				745CCBD61208B9440019FECD /* phrases.txt in Resources */,
+				74A1CF1C1209BC5E000A6138 /* SettingsViewController.xib in Resources */,
+				74A1CF201209BE4B000A6138 /* settings_tab_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +237,13 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* PhraseTTSAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* PhraseTTSViewController.m in Sources */,
+				745CCA2A12086F230019FECD /* sqlite3.c in Sources */,
+				745CCA89120877830019FECD /* FMDatabaseAdditions.m in Sources */,
+				745CCA8A120877830019FECD /* FMResultSet.m in Sources */,
+				745CCA8C120877830019FECD /* FMDatabase.m in Sources */,
+				745CCAA1120879340019FECD /* Model.m in Sources */,
+				745CCB8B1208A8580019FECD /* SearchResult.m in Sources */,
+				74A1CF1B1209BC5E000A6138 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +260,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhraseTTS_Prefix.pch;
 				INFOPLIST_FILE = "PhraseTTS-Info.plist";
+				OTHER_CFLAGS = (
+					"-DSQLITE_ENABLE_FTS3",
+					"-DSQLITE_ENABLE_FTS3_PARENTHESIS",
+				);
 				PRODUCT_NAME = PhraseTTS;
 			};
 			name = Debug;
@@ -192,6 +276,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PhraseTTS_Prefix.pch;
 				INFOPLIST_FILE = "PhraseTTS-Info.plist";
+				OTHER_CFLAGS = (
+					"-DSQLITE_ENABLE_FTS3",
+					"-DSQLITE_ENABLE_FTS3_PARENTHESIS",
+				);
 				PRODUCT_NAME = PhraseTTS;
 				VALIDATE_PRODUCT = YES;
 			};

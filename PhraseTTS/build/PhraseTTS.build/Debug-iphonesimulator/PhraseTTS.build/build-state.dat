@@ -1,0 +1,916 @@
+TPhraseTTS
+v7
+r0
+t302571017.357915
+cCheck dependencies
+cProcessInfoPlistFile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/Info.plist PhraseTTS-Info.plist
+cCompileXIB /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/MainWindow.xib
+cCompileXIB /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTSViewController.xib
+cCpResource build/Debug-iphonesimulator/PhraseTTS.app/sqlite3.def sqlite-amalgamation-3_7_0/sqlite3.def
+cCpResource build/Debug-iphonesimulator/PhraseTTS.app/phrases.sqlite3 phrases.sqlite3
+cCpResource build/Debug-iphonesimulator/PhraseTTS.app/phrases.txt phrases/phrases.txt
+cProcessPCH /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch.gch PhraseTTS_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-bvqpnymnqlxowwdjeyafemxvaycg/PhraseTTS_Prefix.pch.gch PhraseTTS_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/main.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSAppDelegate.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSViewController.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/sqlite3.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.c normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabaseAdditions.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabaseAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMResultSet.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMResultSet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabase.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/Model.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Model.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/SearchResult.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/SearchResult.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS normal i386
+cGenerateDSYMFile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app.dSYM /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS
+cTouch /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk
+c000000004BD236930000000000000110
+t1272067731
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BD1CD90000000000026F020
+t1272040848
+s2551840
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BD1FFC200000000002A96A0
+t1272053698
+s2791072
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BD1FF9E0000000000001355
+t1272053662
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004BD20412000000000000098F
+t1272054802
+s2447
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004BD20471000000000222E640
+t1272054897
+s35841600
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/assert.h
+c000000004748A1310000000000000DCB
+t1195942193
+s3531
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/ctype.h
+c000000004748A1320000000000002C3A
+t1195942194
+s11322
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/dlfcn.h
+c00000000476340E00000000000000AC7
+t1197687008
+s2759
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/errno.h
+c000000004748A13100000000000003EB
+t1195942193
+s1003
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/fcntl.h
+c000000004748A13100000000000003EA
+t1195942193
+s1002
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/inttypes.h
+c000000004748A13100000000000027D1
+t1195942193
+s10193
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/math.h
+c000000004748A10600000000000004B7
+t1195942150
+s1207
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/pthread.h
+c000000004748A133000000000000380F
+t1195942195
+s14351
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/pwd.h
+c000000004748A1310000000000001629
+t1195942193
+s5673
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/readline/history.h
+c000000004748F4FB0000000000001AE2
+t1195963643
+s6882
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/readline/readline.h
+c000000004748F4FB0000000000001AE2
+t1195963643
+s6882
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/semaphore.h
+c000000004748A131000000000000046F
+t1195942193
+s1135
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/signal.h
+c000000004748A13300000000000014F0
+t1195942195
+s5360
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/stdio.h
+c000000004748A1330000000000003D1D
+t1195942195
+s15645
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/stdlib.h
+c000000004748A1330000000000002A79
+t1195942195
+s10873
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/string.h
+c000000004748A1330000000000001731
+t1195942195
+s5937
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/file.h
+c00000000476344BF000000000000100A
+t1197687999
+s4106
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/ioctl.h
+c00000000476344BF00000000000011D1
+t1197687999
+s4561
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/mman.h
+c00000000476344BF0000000000001F86
+t1197687999
+s8070
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/mount.h
+c00000000476344BF00000000000037F1
+t1197687999
+s14321
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/param.h
+c00000000476344BF0000000000002742
+t1197687999
+s10050
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/resource.h
+c00000000476344C00000000000002440
+t1197688000
+s9280
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/stat.h
+c00000000476344C000000000000047CE
+t1197688000
+s18382
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/time.h
+c00000000476344C00000000000001E18
+t1197688000
+s7704
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/sys/types.h
+c00000000476344C1000000000000290F
+t1197688001
+s10511
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/tcl.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/time.h
+c000000004748A133000000000000178E
+t1195942195
+s6030
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/unicode/uregex.h
+c000000004BD1FDC6000000000000ABAC
+t1272053190
+s43948
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/unicode/ustring.h
+c000000004BD1FDB60000000000010F07
+t1272053174
+s69383
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/unicode/utf16.h
+c000000004BD1FDB60000000000004958
+t1272053174
+s18776
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/unicode/utypes.h
+c000000004BD1FDB600000000000087E6
+t1272053174
+s34790
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/include/unistd.h
+c000000004748A13300000000000053FF
+t1195942195
+s21503
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/limits.h
+c000000004748AF950000000000000C7E
+t1195945877
+s3198
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004748AF9500000000000010DD
+t1195945877
+s4317
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004748AF950000000000003197
+t1195945877
+s12695
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdint.h
+c000000004748AF950000000000001BE4
+t1195945877
+s7140
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.h
+c000000004C58363F00000000000001E0
+t1280849471
+s480
+i<UIKit/UIKit.h>
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m
+c000000004C58A42C0000000000000AF4
+t1280877612
+s2804
+i"PhraseTTSAppDelegate.h"
+i"PhraseTTSViewController.h"
+i"Model.h"
+i"SearchResult.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSViewController.h
+c000000004C58363F00000000000000E9
+t1280849471
+s233
+i<UIKit/UIKit.h>
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSViewController.m
+c000000004C58363F000000000000054D
+t1280849471
+s1357
+i"PhraseTTSViewController.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.h
+c0000000049E5E2840000000000000138
+t1239802500
+s312
+i<Foundation/Foundation.h>
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m
+c000000004C5841190000000000001153
+t1280852249
+s4435
+i<Foundation/Foundation.h>
+i"DBConn.h"
+i"FMDatabase.h"
+i"FMDatabaseAdditions.h"
+i"FMResultSet.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabase.h
+c0000000049E4FF0800000000000008D5
+t1239744264
+s2261
+i<Foundation/Foundation.h>
+i"sqlite3.h"
+i"FMResultSet.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabase.m
+c0000000049E4FF0800000000000041A3
+t1239744264
+s16803
+i"FMDatabase.h"
+i"unistd.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabaseAdditions.h
+c0000000049E4FF0800000000000002C3
+t1239744264
+s707
+i<Foundation/Foundation.h>
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabaseAdditions.m
+c0000000049E4FF08000000000000066E
+t1239744264
+s1646
+i"FMDatabase.h"
+i"FMDatabaseAdditions.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMResultSet.h
+c0000000049E4FF080000000000000712
+t1239744264
+s1810
+i<Foundation/Foundation.h>
+i"sqlite3.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMResultSet.m
+c0000000049E4FF0800000000000022D4
+t1239744264
+s8916
+i"FMResultSet.h"
+i"FMDatabase.h"
+i"unistd.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Game.h
+c000000004B167C740000000000000AA0
+t1259764852
+s2720
+i<Foundation/Foundation.h>
+i"FMResultSet.h"
+i"Team.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Game.m
+c000000004B1682460000000000002F22
+t1259766342
+s12066
+i"Game.h"
+i"Model.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/MainWindow.xib
+c000000004C58363F0000000000004D1D
+t1280849471
+s19741
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Model.h
+c000000004C58A4220000000000000240
+t1280877602
+s576
+i<Foundation/Foundation.h>
+i"FMDatabase.h"
+i"FMDatabaseAdditions.h"
+i"FMResultSet.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Model.m
+c000000004C58A64C0000000000001BFD
+t1280878156
+s7165
+i"Model.h"
+i<stdio.h>
+i"SearchResult.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTSViewController.xib
+c000000004C58363F0000000000003EE9
+t1280849471
+s16105
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch
+c000000004C58363F00000000000000BB
+t1280849471
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/SearchResult.h
+c000000004C587ECC000000000000024C
+t1280868044
+s588
+i<Foundation/Foundation.h>
+i"FMResultSet.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/SearchResult.m
+c000000004C58803D000000000000099A
+t1280868413
+s2458
+i"SearchResult.h"
+i"Model.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app
+t1280878159
+s340
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app.dSYM
+t1280878159
+s102
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/Info.plist
+t1280854616
+s806
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/MainWindow.nib
+t1280854617
+s1127
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS
+t1280878159
+s846924
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTSViewController.nib
+t1280854617
+s764
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PkgInfo
+t1280854617
+s8
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/phrases.sqlite
+t1280852098
+s0
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/phrases.sqlite3
+t1280854940
+s0
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/phrases.txt
+t1280877273
+s14200
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/sqlite3.def
+t1280854617
+s3876
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/DBConn.o
+t1280852259
+s19228
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabase.o
+t1280854620
+s53760
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabaseAdditions.o
+t1280854619
+s12744
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMResultSet.o
+t1280854619
+s33784
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/Game.o
+t2
+s0
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/Model.o
+t1280878159
+s30204
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTS.LinkFileList
+c000000004C587E9C000000000000051C
+t1280867996
+s1308
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSAppDelegate.o
+t1280877620
+s48848
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSViewController.o
+t1280854619
+s34372
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/SearchResult.o
+t1280877603
+s18428
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/fmdb.o
+t2
+s0
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/main.o
+t1280854619
+s6324
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/shell.o
+t1280849881
+s76252
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/sqlite3.o
+t1280877586
+s1361528
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/fmdb.m
+c0000000049E4FF080000000000002958
+t1239744264
+s10584
+i<Foundation/Foundation.h>
+i"FMDatabase.h"
+i"FMDatabaseAdditions.h"
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/main.m
+c000000004C58363F0000000000000160
+t1280849471
+s352
+i<UIKit/UIKit.h>
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases.sqlite
+c000000004C583F210000000000000000
+t1280851745
+s0
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases.sqlite3
+c000000004C584B460000000000000000
+t1280854854
+s0
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases/phrases.txt
+c000000004C58A2CF0000000000003778
+t1280877263
+s14200
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/shell.c
+c000000004C4742DE0000000000013125
+t1279738590
+s78117
+i<stdlib.h>
+i<string.h>
+i<stdio.h>
+i<assert.h>
+i"sqlite3.h"
+i<ctype.h>
+i<stdarg.h>
+i<signal.h>
+i<pwd.h>
+i<unistd.h>
+i<sys/types.h>
+i<unistd.h>
+i<readline/readline.h>
+i<readline/history.h>
+i<io.h>
+i<sys/time.h>
+i<sys/resource.h>
+i<windows.h>
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.c
+c000000004C58A3B400000000003F7E1E
+t1280877492
+s4161054
+i"config.h"
+i<stdint.h>
+i<inttypes.h>
+i<tcl.h>
+i<stdarg.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<assert.h>
+i<stddef.h>
+i<windows.h>
+i<os2safe.h>
+i<os2.h>
+i<uconv.h>
+i<ctype.h>
+i<time.h>
+i<pthread.h>
+i<math.h>
+i<sys/types.h>
+i<sys/stat.h>
+i<fcntl.h>
+i<unistd.h>
+i<sys/time.h>
+i<errno.h>
+i<sys/mman.h>
+i<sys/ioctl.h>
+i<semaphore.h>
+i<limits.h>
+i<sys/file.h>
+i<sys/param.h>
+i<sys/mount.h>
+i<dlfcn.h>
+i<winbase.h>
+i<sys/cygwin.h>
+i<unicode/utypes.h>
+i<unicode/uregex.h>
+i<unicode/ustring.h>
+i<unicode/ucol.h>
+i<unicode/ubrk.h>
+i<unicode/utf16.h>
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.def
+c000000004C4742CC0000000000000F24
+t1279738572
+s3876
+
+N/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.h
+c000000004C4742DE00000000000447CE
+t1279738590
+s280526
+i<stdarg.h>
+
+N/var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-bvqpnymnqlxowwdjeyafemxvaycg/PhraseTTS_Prefix.pch.gch
+t1280854618
+s2138480
+
+N/var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gjvhidbpdmtzbrcxjxbmtgahduvo/PhraseTTS_Prefix.pch.gch
+t1280853979
+s2138480
+
+N/var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gmjfkklvhdsgsyczacwdfhbdhttd/PhraseTTS_Prefix.pch.gch
+t1280853980
+s13825936
+
+N/var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch.gch
+t1280854619
+s13825936
+
+NPhraseTTS-Info.plist
+c000000004C58363F00000000000004D6
+t1280849471
+s1238
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies302571017#302571017#0(0"0(0#1#0"8727807232#0"0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/DBConn.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302545059.813009
+e302545059.974643
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/DBConn.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m: In function '+[DBConn init]':
+o/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m:64: warning: conflicting types for '+(void)init'
+o/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:72: warning: previous declaration of '+(id)init'
+lSLF07#2@66"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m302545059#302545059#0(397"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m: In function '+[DBConn init]':/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m:64: warning: conflicting types for '+(void)init'/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:72: warning: previous declaration of '+(id)init'2(22@35"Conflicting types for '+(void)init'302545059#90#108#0(6@58"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m302545049#64#0#64#0#25"conflicting types for '*'0(22@35"Previous declaration of '+(id)init'302545059#198#199#0(6@149"/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h293746462#72#0#72#0#0"0(0#0#58"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m8731311328#2128"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gmjfkklvhdsgsyczacwdfhbdhttd/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/DBConn.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/DBConn.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabase.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302547419.890127
+e302547420.048412
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabase.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@70"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabase.m302547419#302547420#0(0"0(0#0#62"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabase.m8727738336#2190"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabase.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabase.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabaseAdditions.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabaseAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302547419.689227
+e302547419.770840
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabaseAdditions.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabaseAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabaseAdditions.m302547419#302547419#0(0"0(0#0#71"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabaseAdditions.m8724390720#2208"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMDatabaseAdditions.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMDatabaseAdditions.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMResultSet.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMResultSet.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302547419.770935
+e302547419.890033
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMResultSet.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMResultSet.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMResultSet.m302547419#302547419#0(0"0(0#0#63"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMResultSet.m8737024480#2192"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/FMResultSet.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/FMResultSet.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/Game.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Game.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/Model.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Model.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302570958.931159
+e302570959.109024
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/Model.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Model.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Model.m302570958#302570959#0(0"0(0#0#57"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Model.m8733936384#2180"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Model.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/Model.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSAppDelegate.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302570420.330502
+e302570420.492109
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSAppDelegate.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m: In function '-[PhraseTTSAppDelegate application:didFinishLaunchingWithOptions:]':
+o/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:35: warning: 'PhraseTTSAppDelegate' may not respond to '-searchTable'
+o/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:35: warning: (Messages without a matching method signature
+o/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:35: warning: will be assumed to return 'id' and accept
+o/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:35: warning: '...' as arguments.)
+lSLF07#2@88"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m302570420#302570420#0(706"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m: In function '-[PhraseTTSAppDelegate application:didFinishLaunchingWithOptions:]':/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:35: warning: 'PhraseTTSAppDelegate' may not respond to '-searchTable'/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:35: warning: (Messages without a matching method signature/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:35: warning: will be assumed to return 'id' and accept/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m:35: warning: '...' as arguments.)2(22@56"'PhraseTTSAppDelegate' may not respond to '-searchTable'302570420#164#151#0(6@80"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m302570412#35#0#35#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)302570420#315#140#0(6@80"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m302570412#35#0#35#0#0"0(0#0#80"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m8723152224#2218"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSAppDelegate.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSAppDelegate.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSViewController.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302547419.583381
+e302547419.689135
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSViewController.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSViewController.m302547419#302547419#0(0"0(0#0#83"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSViewController.m8726568608#2224"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/Classes/PhraseTTSViewController.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTSViewController.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/SearchResult.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/SearchResult.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302570403.321064
+e302570403.399238
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/SearchResult.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/SearchResult.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/SearchResult.m302570403#302570403#0(0"0(0#0#64"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/SearchResult.m8742760032#2194"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/SearchResult.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/SearchResult.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/fmdb.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/fmdb.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/main.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s302547419.529493
+e302547419.583049
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/main.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/main.m302547419#302547419#0(0"0(0#0#56"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/main.m8732529760#2178"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/main.m -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/main.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/shell.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/shell.c normal i386 c com.apple.compilers.gcc.4_2
+s302542681.061363
+e302542681.350720
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/shell.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/shell.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@91"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/shell.c302542681#302542681#0(0"0(0#0#83"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/shell.c8717098304#2098"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gjvhidbpdmtzbrcxjxbmtgahduvo/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/shell.c -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/shell.o0#
+
+CCompileC build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/sqlite3.o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.c normal i386 c com.apple.compilers.gcc.4_2
+s302570382.455898
+e302570386.224641
+r1
+xCompileC
+xbuild/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/sqlite3.o
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@93"Compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.c302570382#302570386#0(0"0(0#0#85"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.c8741066080#2156"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -include /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-bvqpnymnqlxowwdjeyafemxvaycg/PhraseTTS_Prefix.pch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.c -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/sqlite3.o0#
+
+CCompileXIB /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/MainWindow.xib
+s302547417.000655
+e302547418.569675
+r1
+xCompileXIB
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib302547417#302547418#0(0"0(0#0#64"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/MainWindow.xib8727776576#667"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/MainWindow.nib /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCompileXIB /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTSViewController.xib
+s302547417.001820
+e302547417.809467
+r1
+xCompileXIB
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTSViewController.xib
+lSLF07#2@38"CompileXIB PhraseTTSViewController.xib302547417#302547417#0(0"0(0#0#77"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTSViewController.xib8726930304#693"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTSViewController.nib /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTSViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk0#
+
+CCpResource build/Debug-iphonesimulator/PhraseTTS.app/phrases.sqlite phrases.sqlite
+s302544898.894374
+e302544898.912819
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PhraseTTS.app/phrases.sqlite
+xphrases.sqlite
+lSLF07#2@19"Copy phrases.sqlite302544898#302544898#0(0"0(0#0#64"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases.sqlite8726596160#555"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases.sqlite /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app0#
+
+CCpResource build/Debug-iphonesimulator/PhraseTTS.app/phrases.sqlite3 phrases.sqlite3
+s302547740.202191
+e302547740.302314
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PhraseTTS.app/phrases.sqlite3
+xphrases.sqlite3
+lSLF07#2@20"Copy phrases.sqlite3302547740#302547740#0(0"0(0#0#65"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases.sqlite38728619808#556"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases.sqlite3 /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app0#
+
+CCpResource build/Debug-iphonesimulator/PhraseTTS.app/phrases.txt phrases/phrases.txt
+s302570073.158186
+e302570073.174104
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PhraseTTS.app/phrases.txt
+xphrases/phrases.txt
+lSLF07#2@24"Copy phrases/phrases.txt302570073#302570073#0(0"0(0#0#69"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases/phrases.txt8728607936#560"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/phrases/phrases.txt /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app0#
+
+CCpResource build/Debug-iphonesimulator/PhraseTTS.app/sqlite3.def sqlite-amalgamation-3_7_0/sqlite3.def
+s302547417.809570
+e302547417.832687
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/PhraseTTS.app/sqlite3.def
+xsqlite-amalgamation-3_7_0/sqlite3.def
+lSLF07#2@42"Copy sqlite-amalgamation-3_7_0/sqlite3.def302547417#302547417#0(0"0(0#0#87"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.def8730149600#578"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/sqlite-amalgamation-3_7_0/sqlite3.def /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app0#
+
+CGenerateDSYMFile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app.dSYM /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS
+s302570959.182350
+e302570959.265605
+r1
+xGenerateDSYMFile
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app.dSYM
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS
+lSLF07#2@115"GenerateDSYMFile build/Debug-iphonesimulator/PhraseTTS.app.dSYM build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS302570959#302570959#0(0"0(0#0#101"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS8738024800#484"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app.dSYM0#
+
+CLd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS normal i386
+s302570959.109114
+e302570959.182265
+r1
+xLd
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS
+xnormal
+xi386
+lSLF07#2@106"Link /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS302570959#302570959#0(0"0(0#0#0"8727878368#1027"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -L/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -filelist /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/Objects-normal/i386/PhraseTTS.LinkFileList -mmacosx-version-min=10.5 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PhraseTTS0#
+
+CProcessInfoPlistFile /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/Info.plist PhraseTTS-Info.plist
+s302547416.997009
+e302547417.000567
+r1
+xProcessInfoPlistFile
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/Info.plist
+xPhraseTTS-Info.plist
+lSLF07#2@28"Process PhraseTTS-Info.plist302547416#302547417#0(0"0(0#0#70"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS-Info.plist8730418336#580"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    builtin-infoPlistUtility PhraseTTS-Info.plist -genpkginfo /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app/Info.plist0#
+
+CProcessPCH /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-bvqpnymnqlxowwdjeyafemxvaycg/PhraseTTS_Prefix.pch.gch PhraseTTS_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+s302547418.571036
+e302547418.803247
+r1
+xProcessPCH
+x/var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-bvqpnymnqlxowwdjeyafemxvaycg/PhraseTTS_Prefix.pch.gch
+xPhraseTTS_Prefix.pch
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile PhraseTTS_Prefix.pch302547418#302547418#0(0"0(0#0#70"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch8736987424#2003"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch -o /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-bvqpnymnqlxowwdjeyafemxvaycg/PhraseTTS_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gjvhidbpdmtzbrcxjxbmtgahduvo/PhraseTTS_Prefix.pch.gch PhraseTTS_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+s302546779.810622
+e302546779.906098
+r1
+xProcessPCH
+x/var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gjvhidbpdmtzbrcxjxbmtgahduvo/PhraseTTS_Prefix.pch.gch
+xPhraseTTS_Prefix.pch
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile PhraseTTS_Prefix.pch302546779#302546779#0(0"0(0#0#70"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch8726396256#1949"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch -o /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gjvhidbpdmtzbrcxjxbmtgahduvo/PhraseTTS_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gmjfkklvhdsgsyczacwdfhbdhttd/PhraseTTS_Prefix.pch.gch PhraseTTS_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s302546779.809374
+e302546780.680366
+r1
+xProcessPCH
+x/var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gmjfkklvhdsgsyczacwdfhbdhttd/PhraseTTS_Prefix.pch.gch
+xPhraseTTS_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile PhraseTTS_Prefix.pch302546779#302546780#0(0"0(0#0#70"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch8726426464#2003"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch -o /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-gmjfkklvhdsgsyczacwdfhbdhttd/PhraseTTS_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch.gch PhraseTTS_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s302547418.569997
+e302547419.529089
+r1
+xProcessPCH
+x/var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch.gch
+xPhraseTTS_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile PhraseTTS_Prefix.pch302547418#302547419#0(0"0(0#0#70"/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch8737127712#2057"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.2.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-generated-files.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-own-target-headers.hmap -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-all-target-headers.hmap -iquote /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/PhraseTTS-project-headers.hmap -F/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/include -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources/i386 -I/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/PhraseTTS.build/Debug-iphonesimulator/PhraseTTS.build/DerivedSources -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/PhraseTTS_Prefix.pch -o /var/folders/7v/7vFIi8d3FQKMU2QJz-YoF++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PhraseTTS_Prefix-hhjfqbjvxgtaylffqvirakyozaqb/PhraseTTS_Prefix.pch.gch0#
+
+CTouch /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app
+s302570959.265750
+e302570959.268394
+r1
+xTouch
+x/Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app
+lSLF07#2@97"Touch /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app302570959#302570959#0(0"0(0#0#0"8741785472#364"    cd /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/cclaan/projects/iphone/PhraseTTS/PhraseTTS/build/Debug-iphonesimulator/PhraseTTS.app0#
+

@@ -8,11 +8,16 @@
 
 #import "PhraseTTSAppDelegate.h"
 #import "PhraseTTSViewController.h"
+#import "Model.h"
+
+#import "SearchResult.h"
 
 @implementation PhraseTTSAppDelegate
 
 @synthesize window;
 @synthesize viewController;
+@synthesize tabController;
+
 
 
 #pragma mark -
@@ -20,11 +25,54 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
+	// setup DB
+	[Model instance];
+	
+	//[[Model instance] createTable];
+	
+	
+	// SELECT * FROM mail WHERE body MATCH 'sqlite';
+	
+	
+	[self searchTable];
+	
+	
+	
+	
+	
+	
+	
     // Override point for customization after app launch. 
     [window addSubview:viewController.view];
     [window makeKeyAndVisible];
 
 	return YES;
+}
+
+-(void) searchTable {
+	
+	if ( [Model instance].updatingIndex ) {
+		NSLog(@"model is updating... %3.2f " , [Model instance].updateProgress );
+		[self performSelector:@selector(searchTable) withObject:nil afterDelay:0.1];
+		return;
+	}
+	
+	NSArray * arr = [[SearchResult sortedSearchForQuery:@"shirt"] retain];
+	
+	if ( [arr count] > 0 ) {
+		SearchResult * r = [arr objectAtIndex:0];
+		NSLog(@"body: %@  , uses: %i " , r.body , r.uses );
+		[r incrementUsesAndSave];
+	}
+	
+	NSLog(@"total: %i " , [arr count] );
+	
+	
+	/*SearchResult * sr = [[SearchResult alloc] init];
+	sr.body = @"My favorite phrase today peanuts";
+	[sr insertIntoDb];
+	*/
+	
 }
 
 

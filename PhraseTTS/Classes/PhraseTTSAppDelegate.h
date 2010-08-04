@@ -12,11 +12,16 @@
 
 @interface PhraseTTSAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    PhraseTTSViewController *viewController;
+    
+	PhraseTTSViewController *viewController;
+	
+	UITabBarController * tabController;
+	
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet PhraseTTSViewController *viewController;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabController;
 
 @end
 
