@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "LoadingView.h"
+#import "LLHUDStatusView.h"
+
 @class PhraseTTSViewController;
 
 @interface PhraseTTSAppDelegate : NSObject <UIApplicationDelegate> {
@@ -16,6 +19,9 @@
 	PhraseTTSViewController *viewController;
 	
 	UITabBarController * tabController;
+	
+	LoadingView * loadingView;
+	NSTimer * updateTimer;
 	
 }
 

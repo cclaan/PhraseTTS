@@ -9,6 +9,7 @@
 #import "Model.h"
 #include <stdio.h>
 #import "SearchResult.h"
+#import "Constants.h"
 
 static Model *instance = nil;
 
@@ -41,7 +42,45 @@ NSString * readLineAsNSString(FILE *file);
 
 	[self initDb];
 	
-		
+	ttsEngine = [[FliteTTS alloc] init];
+	
+	NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+	
+	[self setVoiceFromKey:[defs objectForKey:kVoiceKey]];
+	
+	
+}
+
+#pragma mark -
+#pragma mark TTS
+
+-(void) speakText:(NSString*)text {
+	
+	[ttsEngine speakText:text];
+	
+}
+
+-(void) setVoiceFromKey:(NSString*) key {
+
+	//cmu_us_slt - female
+	//cmu_us_awb - default male
+	//cmu_us_rms - 
+	//cmu_us_kal16 -- male
+	//cmu_us_kal
+	
+	if ( [key isEqualToString:kMaleVoice] ) {
+		[ttsEngine setVoice:@"cmu_us_awb"];
+	} else if ( [key isEqualToString:kFemaleVoice] ) {
+		[ttsEngine setVoice:@"cmu_us_slt"];
+	} else if ( [key isEqualToString:kMaleVoice2] ) {
+		[ttsEngine setVoice:@"cmu_us_kal16"];
+	} else if ( [key isEqualToString:kMaleVoice3] ) {
+		[ttsEngine setVoice:@"cmu_us_kal"];
+	} else if ( [key isEqualToString:kMaleVoice4] ) {
+		[ttsEngine setVoice:@"cmu_us_rms"];
+	}
+	
+	
 }
 
 #pragma mark -
@@ -51,6 +90,9 @@ NSString * readLineAsNSString(FILE *file);
 
 - (void)initDb
 {
+	
+	// just to be safe
+	updatingIndex = YES;
 	
 	BOOL recreateIndex = NO;
 	
@@ -129,7 +171,7 @@ NSString * readLineAsNSString(FILE *file);
 	
 	if ( recreateIndex ) {
 		
-		updatingIndex = YES;
+		
 		[self performSelectorInBackground:@selector(recreateIndex) withObject:nil];
 		
 	} else {
@@ -181,6 +223,8 @@ NSString * readLineAsNSString(FILE *file);
 	
 	NSString * pathOfPhrases = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:PHRASES_TEXT_FILE];
 	
+	//NSString * pathOfWords = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:WORDS_TEXT_FILE];
+	
 	//FILE *file = fopen([pathOfPhrases UTF8String], "r");
 	
 	// FIXME: this needs to change to a stream if things get big.
@@ -210,6 +254,19 @@ NSString * readLineAsNSString(FILE *file);
 	}
 	
 	[lines release];
+	[phrases release];
+	
+	if (USE_WORD_LIST) {
+		
+		// this was for the big ass words table, very slow to make this
+		[self buildWordsTable];
+		[self createIndexForWords];
+	
+	}
+	
+	// placeholder if we 
+	//--[self updateUsedPhrasesWithProperRowIds];
+	
 	
 	/*
 	// check for NULL
@@ -227,15 +284,75 @@ NSString * readLineAsNSString(FILE *file);
 	
 	
 	
+	
+	
 	NSLog(@"complete!");
 	
-	[self updateUsedPhrasesWithProperRowIds];
+	
+	
 	
 	updatingIndex = NO;
 	
 	[self optimizeIndex];
 	
 	[pool release];
+	
+}
+
+-(void) buildWordsTable {
+	
+	NSString * pathOfWords = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:WORDS_TEXT_FILE];
+	
+	//FILE *file = fopen([pathOfPhrases UTF8String], "r");
+	
+	// FIXME: this needs to change to a stream if things get big.
+	// the below method was just ascii
+	NSString * words = [[NSString stringWithContentsOfFile:pathOfWords encoding:NSUTF8StringEncoding error:nil] retain];
+	
+	NSArray * lines = [[words componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] retain]; 
+	
+	[words release];
+	
+	//SearchResult * sr = [[SearchResult alloc] init];
+	float total_words = [lines count];
+	float counter = 0;
+	NSString * word;
+	
+	for (NSString * line in lines) {
+		
+		counter ++;
+		
+		NSScanner * sc = [[NSScanner scannerWithString:line] retain];
+		
+		
+		int rank;
+		
+		BOOL succ = [sc scanInteger:&rank];
+		[sc scanString:@" " intoString:nil];
+		[sc scanCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:&word];
+		
+		
+		//NSLog(@"Word: %i , %@ " , rank , word );
+		[db executeUpdate:@"INSERT INTO words(rank, word) VALUES(?, ?);" , [NSNumber numberWithInt:rank] , word ];
+		
+		[sc release];
+		
+		self.updateProgress = counter / total_words;
+	}
+	
+	
+	
+	
+	if ([db hadError]) {
+		
+		NSLog(@"Err doing word insert %d: %@", [db lastErrorCode], [db lastErrorMessage]);
+		return NO;
+		
+	} 
+	
+	
+	[lines release];
+	
 	
 }
 
@@ -262,7 +379,30 @@ NSString * readLineAsNSString(FILE *file);
 	
 	updatingIndex = NO;
 	
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"PhraseDatabaseReady" object:nil];
+	
 	[pool release];
+	
+}
+
+
+-(void) createIndexForWords {
+	
+	NSLog(@"Creating index for words");
+	
+	[db executeUpdate:@"CREATE INDEX alpha_words ON words (word)"];
+	
+	//CREATE UNIQUE INDEX idx_department ON department (dnumber, dname)
+	
+	if ([db hadError]) {
+		
+		NSLog(@"Err %d: %@", [db lastErrorCode], [db lastErrorMessage]);
+		
+	} else {
+		
+		NSLog(@"create tables success");
+		
+	}
 	
 }
 
@@ -306,9 +446,13 @@ NSString * readLineAsNSString(FILE *file)
 -(void) createTables  {
 	
 	
-	[db executeUpdate:@"CREATE VIRTUAL TABLE phrases USING fts3(uses, keywords, body);"];
+	[db executeUpdate:@"CREATE VIRTUAL TABLE phrases USING fts3(keywords, body, no_punc_body);"];
 	
-	[db executeUpdate:@"CREATE TABLE used_phrases (rowid integer, uses integer, body text)"];
+	//[db executeUpdate:@"CREATE TABLE used_phrases (rowid integer, uses integer, body text, no_punc_body text)"];
+	
+	[db executeUpdate:@"CREATE TABLE used_phrases (rowid integer, uses integer)"];
+	
+	[db executeUpdate:@"CREATE TABLE words (rank integer, word text)"];
 	
 	if ([db hadError]) {
 		

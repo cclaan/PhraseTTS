@@ -12,6 +12,8 @@
 
 #import "SearchResult.h"
 
+#import "Constants.h"
+
 @implementation PhraseTTSAppDelegate
 
 @synthesize window;
@@ -25,53 +27,73 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
+	[self setDefaults];
+	
 	// setup DB
 	[Model instance];
 	
-	//[[Model instance] createTable];
+	[self performSelector:@selector(checkIfUpdating) withObject:nil afterDelay:0.1];	
 	
-	
-	// SELECT * FROM mail WHERE body MATCH 'sqlite';
-	
-	
-	[self searchTable];
-	
-	
-	
-	
-	
-	
-	
-    // Override point for customization after app launch. 
-    [window addSubview:viewController.view];
+    [window addSubview:tabController.view];
     [window makeKeyAndVisible];
 
 	return YES;
 }
 
--(void) searchTable {
+-(void) setDefaults {
+	NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+	
+	if ( ![defs boolForKey:kHasLoadedAppKey] ) {
+		
+		[defs setBool:YES forKey:kHasLoadedAppKey];
+		[defs setBool:YES forKey:kAutoCorrectKey];
+		[defs setObject:kQWERTYKeyboard forKey:kKeyboardTypeKey];
+		[defs setObject:kMaleVoice4 forKey:kVoiceKey];
+		
+	}
+	
+	
+	
+}
+
+-(void) checkIfUpdating {
 	
 	if ( [Model instance].updatingIndex ) {
-		NSLog(@"model is updating... %3.2f " , [Model instance].updateProgress );
-		[self performSelector:@selector(searchTable) withObject:nil afterDelay:0.1];
-		return;
+		
+		
+		
+		//loadingView = [[LLHUDStatusView alloc] initWithTitle:@"Updating Index ( 0% )" image:nil andSpinning:YES];
+		//[loadingView showInView:window];
+		
+		
+		loadingView = [[[LoadingView alloc] init] autorelease];
+		loadingView.fadeBackground = YES;
+		[loadingView showInView:window];
+		
+		 
+		updateTimer = [NSTimer scheduledTimerWithTimeInterval:(1/15.) target:self selector:@selector(updateProgress) userInfo:nil repeats:YES];
+		
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(databaseReady) name:@"PhraseDatabaseReady" object:nil];
+		
 	}
 	
-	NSArray * arr = [[SearchResult sortedSearchForQuery:@"shirt"] retain];
+}
+
+-(void) updateProgress {
 	
-	if ( [arr count] > 0 ) {
-		SearchResult * r = [arr objectAtIndex:0];
-		NSLog(@"body: %@  , uses: %i " , r.body , r.uses );
-		[r incrementUsesAndSave];
-	}
+	[loadingView setLabel:[NSString stringWithFormat:@"Updating Index - %3.0f%% " , [Model instance].updateProgress*100.]];
+	//loadingView.title = [NSString stringWithFormat:@"Updating Index ( %3.1f% )" , [Model instance].updateProgress*100.];
 	
-	NSLog(@"total: %i " , [arr count] );
+}
+
+-(void) databaseReady {
 	
+	[updateTimer invalidate];
+	updateTimer = nil;
 	
-	/*SearchResult * sr = [[SearchResult alloc] init];
-	sr.body = @"My favorite phrase today peanuts";
-	[sr insertIntoDb];
-	*/
+	[loadingView hide];
+	loadingView = nil;
+	
 	
 }
 
@@ -111,6 +133,7 @@
 
 - (void)dealloc {
     [viewController release];
+	[tabController release];
     [window release];
     [super dealloc];
 }

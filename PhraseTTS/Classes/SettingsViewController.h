@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SettingsViewController : UITableViewController {
-
+@interface SettingsViewController : UIViewController < UITableViewDelegate , UITableViewDataSource > {
+	
+	IBOutlet UITableView * tableView;
+	
 }
 
 @end
