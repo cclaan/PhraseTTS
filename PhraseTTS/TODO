@@ -1,9 +1,16 @@
 
-Download the phrase text file from google docs, or wherever, and have the URL to download from be in the settings
 
-right now the whole database is constructed from scratch the first time the app is ever used.
-we could probably construct the database first, but it makes updating phrases harder
 
+The most work is probably in the database end:
+i was trying to make it so you could drag a new phrases.txt into itunes and it would
+add any new phrases or delete removed phrases, but i didnt quite get there.
+
+
+Updating the DB with a new file should preserve rowid's and keep the used_phrases table intact
+
+im also not too happy with the SearchResult file, it kind of hides the fact that two tables are used to search,
+which is good, but its a little sloppy sometimes. the methods to update an existing phrase, or insert a new one could 
+be a little smoother. 
 
 
 I took out the plus buttons because i didnt finish implementing them, and it seemed like
@@ -13,7 +20,14 @@ it would not be useful when the phrases are so large,
 I made a suggested words view that you can view by setting USE_WORD_LIST 0 to USE_WORD_LIST 1
 
 
+we could implement a custom keyboard that has special keys:
+ - go to beginning of phrase (helps to finish a phrase)
+ - abcd layout 
+ - hide keyboard, clear entire phrase
 
+
+
+Volume could be louder
 
 
 

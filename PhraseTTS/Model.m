@@ -24,6 +24,9 @@ static Model *instance = nil;
 -(void) createTables;
 -(void) optimizeIndex;
 
+-(void) buildWordsTable;
+-(void) createIndexForWords;
+
 NSString * readLineAsNSString(FILE *file);
 
 @end
@@ -327,7 +330,7 @@ NSString * readLineAsNSString(FILE *file);
 		
 		int rank;
 		
-		BOOL succ = [sc scanInteger:&rank];
+		[sc scanInteger:&rank];
 		[sc scanString:@" " intoString:nil];
 		[sc scanCharactersFromSet:[NSCharacterSet alphanumericCharacterSet] intoString:&word];
 		
@@ -346,7 +349,7 @@ NSString * readLineAsNSString(FILE *file);
 	if ([db hadError]) {
 		
 		NSLog(@"Err doing word insert %d: %@", [db lastErrorCode], [db lastErrorMessage]);
-		return NO;
+		
 		
 	} 
 	

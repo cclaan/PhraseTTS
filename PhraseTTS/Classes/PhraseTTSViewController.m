@@ -11,6 +11,15 @@
 #import "Model.h"
 #import "Constants.h"
 
+
+@interface PhraseTTSViewController()
+
+-(void) phraseDbReady;
+-(void) searchTable;
+
+@end
+
+
 @implementation PhraseTTSViewController
 
 @synthesize searchBar , tableView, currentSearchResults , searchTextField;
@@ -39,6 +48,8 @@
     [super viewDidLoad];
 	
 	
+	// TODO: add non-qwerty keyboard
+	// this is where we could add a non-QWERT keyboard based on prefs:
 	//searchTextField.inputView = [[UIView alloc] init];
 	
 	// Observe keyboard hide and show notifications to resize the text view appropriately.
@@ -89,8 +100,6 @@
 	
 	if ( [query length] == 0 ) {
 		
-		// perform the recent lookup
-		//arr = (NSMutableArray*)[[SearchResult sortedSearchFromUsedPhrases: query ] retain];
 		arr = (NSMutableArray*)[[SearchResult getTopUsedPhrases] retain];
 		
 	} else {
@@ -99,21 +108,9 @@
 		
 	}
 	
-	
-	
-	
-	NSLog(@"total: %i " , [arr count] );
-	
 	self.currentSearchResults = arr;
 	[tableView reloadData];
 	
-	
-	
-	
-	/*SearchResult * sr = [[SearchResult alloc] init];
-	 sr.body = @"My favorite phrase today peanuts";
-	 [sr insertIntoDb];
-	 */
 	
 }
 
@@ -234,6 +231,7 @@
 #pragma mark -
 #pragma mark Accessory view action
 
+// not used..
 - (IBAction)tappedMe:(id)sender {
     /*
     // When the accessory view button is tapped, add a suitable string to the text view.
@@ -255,12 +253,25 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	
 	if ( [searchTextField.text length] > 0 ) {
-		//FIXME: this doesnt check if this exact phrase exists already in the DB
+		
+		
 		SearchResult * sr = [[SearchResult alloc] init];
+		
 		sr.body = textField.text;
-		sr.uses = 1;
-		//[sr insertIntoUsedPhrasesTable];
-		[sr insertIntoDb];
+		
+		
+		if ( [sr checkIfExistsAndPopulateIfSo] ) {
+			
+			[sr incrementUsesAndSave];
+			
+		} else {
+			
+			sr.uses = 1;
+			[sr insertIntoDb];
+			
+		}
+		
+		
 		[sr release];
 		
 		[[Model instance] speakText:searchTextField.text];
@@ -416,19 +427,9 @@
 
 -(void) resultClicked:(SearchResult*) result {
 	
-	NSLog(@"result clicked: %@ " , result.body );
-	
 	[[Model instance] speakText: result.body ];
 	
 	[result incrementUsesAndSave];
-	
-	/*
-	SearchResult * sr = [[SearchResult alloc] init];
-	sr.rowid = result.rowid;
-	sr.body = result.body;
-	[sr insertIntoUsedPhrasesTable];
-	[sr release];
-	*/
 	
 	
 }

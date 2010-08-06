@@ -14,6 +14,13 @@
 
 #import "Constants.h"
 
+@interface PhraseTTSAppDelegate()
+
+-(void) setDefaults;
+
+@end
+
+
 @implementation PhraseTTSAppDelegate
 
 @synthesize window;
@@ -32,6 +39,7 @@
 	// setup DB
 	[Model instance];
 	
+	// display a loading bar if the database is indexing...
 	[self performSelector:@selector(checkIfUpdating) withObject:nil afterDelay:0.1];	
 	
     [window addSubview:tabController.view];
@@ -41,6 +49,7 @@
 }
 
 -(void) setDefaults {
+	
 	NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
 	
 	if ( ![defs boolForKey:kHasLoadedAppKey] ) {
@@ -52,20 +61,12 @@
 		
 	}
 	
-	
-	
 }
 
 -(void) checkIfUpdating {
 	
 	if ( [Model instance].updatingIndex ) {
-		
-		
-		
-		//loadingView = [[LLHUDStatusView alloc] initWithTitle:@"Updating Index ( 0% )" image:nil andSpinning:YES];
-		//[loadingView showInView:window];
-		
-		
+
 		loadingView = [[[LoadingView alloc] init] autorelease];
 		loadingView.fadeBackground = YES;
 		[loadingView showInView:window];
@@ -82,7 +83,6 @@
 -(void) updateProgress {
 	
 	[loadingView setLabel:[NSString stringWithFormat:@"Updating Index - %3.0f%% " , [Model instance].updateProgress*100.]];
-	//loadingView.title = [NSString stringWithFormat:@"Updating Index ( %3.1f% )" , [Model instance].updateProgress*100.];
 	
 }
 

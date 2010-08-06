@@ -266,8 +266,6 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
-								<string>74A1D14D120A251A000A6138</string>
-								<string>745CCA7F120877830019FECD</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -275,13 +273,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
-									<integer>1</integer>
+									<integer>37</integer>
+									<integer>24</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 12}, {295, 841}}</string>
+							<string>{{0, 0}, {295, 841}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -318,7 +316,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SearchResultCell.m</string>
+								<string>TODO</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +324,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SearchResultCell.m</string>
+										<string>TODO</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7420278F120BAAE3002FC0E5</string>
+										<string>742027E1120BC8D2002FC0E5</string>
 										<key>history</key>
 										<array>
 											<string>745CCABE12087F2F0019FECD</string>
@@ -338,16 +336,11 @@
 											<string>745CCAC312087F2F0019FECD</string>
 											<string>745CCBE41208C4260019FECD</string>
 											<string>745CCC561208DBAD0019FECD</string>
-											<string>74A1D0E2120A0C64000A6138</string>
-											<string>74A1D0F1120A0CB1000A6138</string>
 											<string>74A1D126120A1590000A6138</string>
 											<string>74A1D12C120A15F1000A6138</string>
 											<string>74A1D138120A1766000A6138</string>
 											<string>74202484120A337A002FC0E5</string>
 											<string>74202485120A337A002FC0E5</string>
-											<string>74202512120A4990002FC0E5</string>
-											<string>74202513120A4990002FC0E5</string>
-											<string>74202514120A4990002FC0E5</string>
 											<string>74202515120A4990002FC0E5</string>
 											<string>74202517120A4990002FC0E5</string>
 											<string>74202522120A49D3002FC0E5</string>
@@ -355,26 +348,28 @@
 											<string>74202590120A547A002FC0E5</string>
 											<string>742025B3120B280A002FC0E5</string>
 											<string>742025B5120B280A002FC0E5</string>
-											<string>742025E2120B2AE5002FC0E5</string>
 											<string>742025EC120B2B7C002FC0E5</string>
 											<string>74202659120B4773002FC0E5</string>
-											<string>742026B3120B654B002FC0E5</string>
 											<string>742026DC120B85A0002FC0E5</string>
 											<string>742026DE120B85A0002FC0E5</string>
 											<string>742026DF120B85A0002FC0E5</string>
-											<string>7420270E120B8CED002FC0E5</string>
-											<string>7420272F120B9B9B002FC0E5</string>
 											<string>7420273C120B9F7D002FC0E5</string>
 											<string>7420273D120B9F7D002FC0E5</string>
-											<string>7420273F120B9F7D002FC0E5</string>
-											<string>74202748120BA0D7002FC0E5</string>
-											<string>74202749120BA0D7002FC0E5</string>
-											<string>74202766120BA912002FC0E5</string>
-											<string>74202767120BA912002FC0E5</string>
 											<string>74202768120BA912002FC0E5</string>
 											<string>7420276D120BA95E002FC0E5</string>
-											<string>7420276E120BA95E002FC0E5</string>
-											<string>7420276F120BA95E002FC0E5</string>
+											<string>742027C6120BC760002FC0E5</string>
+											<string>742027C7120BC760002FC0E5</string>
+											<string>742027C8120BC760002FC0E5</string>
+											<string>742027C9120BC760002FC0E5</string>
+											<string>742027CA120BC760002FC0E5</string>
+											<string>742027CB120BC760002FC0E5</string>
+											<string>742027CC120BC760002FC0E5</string>
+											<string>742027CD120BC760002FC0E5</string>
+											<string>742027CE120BC760002FC0E5</string>
+											<string>742027CF120BC760002FC0E5</string>
+											<string>742027DB120BC7D7002FC0E5</string>
+											<string>742027DF120BC8D2002FC0E5</string>
+											<string>742027E0120BC8D2002FC0E5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -604,7 +599,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WordSuggestionsView.m</string>
+								<string>SearchResult.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

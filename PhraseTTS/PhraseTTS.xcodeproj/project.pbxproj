@@ -17,7 +17,6 @@
 		28D7ACF80DDB3853001CB0EB /* PhraseTTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PhraseTTSViewController.m */; };
 		742024AD120A367E002FC0E5 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 742024AC120A367E002FC0E5 /* LoadingView.m */; };
 		742024B8120A38B7002FC0E5 /* black_rounded_rect_s9_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 742024B7120A38B7002FC0E5 /* black_rounded_rect_s9_dark.png */; };
-		742024BB120A3912002FC0E5 /* LLHUDStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 742024BA120A3912002FC0E5 /* LLHUDStatusView.m */; };
 		742024FC120A470A002FC0E5 /* MultipleChoiceSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742024FA120A470A002FC0E5 /* MultipleChoiceSettingsController.m */; };
 		742024FD120A470A002FC0E5 /* MultipleChoiceSettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742024FB120A470A002FC0E5 /* MultipleChoiceSettingsController.xib */; };
 		7420267A120B5F83002FC0E5 /* WordSuggestionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74202679120B5F83002FC0E5 /* WordSuggestionsView.m */; };
@@ -39,7 +38,6 @@
 		74A1CF491209C08D000A6138 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A1CF471209C08D000A6138 /* SettingsViewController.xib */; };
 		74A1CFA61209C695000A6138 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 74A1CFA51209C695000A6138 /* TODO */; };
 		74A1CFA91209C76C000A6138 /* SearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A1CFA81209C76C000A6138 /* SearchResultCell.m */; };
-		74A1D0D3120A0B9E000A6138 /* UICustomSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A1D0D2120A0B9E000A6138 /* UICustomSearchBar.m */; };
 		74A1D1FC120A254E000A6138 /* au_none.c in Sources */ = {isa = PBXBuildFile; fileRef = 74A1D178120A254A000A6138 /* au_none.c */; };
 		74A1D1FD120A254E000A6138 /* au_streaming.c in Sources */ = {isa = PBXBuildFile; fileRef = 74A1D179120A254A000A6138 /* au_streaming.c */; };
 		74A1D1FE120A254E000A6138 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 74A1D17A120A254A000A6138 /* audio.c */; };
@@ -156,11 +154,9 @@
 		742024AB120A367E002FC0E5 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		742024AC120A367E002FC0E5 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		742024B7120A38B7002FC0E5 /* black_rounded_rect_s9_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_rounded_rect_s9_dark.png; sourceTree = "<group>"; };
-		742024B9120A3912002FC0E5 /* LLHUDStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHUDStatusView.h; sourceTree = "<group>"; };
-		742024BA120A3912002FC0E5 /* LLHUDStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHUDStatusView.m; sourceTree = "<group>"; };
 		742024F9120A470A002FC0E5 /* MultipleChoiceSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleChoiceSettingsController.h; sourceTree = "<group>"; };
 		742024FA120A470A002FC0E5 /* MultipleChoiceSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleChoiceSettingsController.m; sourceTree = "<group>"; };
-		742024FB120A470A002FC0E5 /* MultipleChoiceSettingsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleChoiceSettingsController.xib; sourceTree = "<group>"; };
+		742024FB120A470A002FC0E5 /* MultipleChoiceSettingsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MultipleChoiceSettingsController.xib; path = Classes/MultipleChoiceSettingsController.xib; sourceTree = "<group>"; };
 		74202552120A4E86002FC0E5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		74202678120B5F83002FC0E5 /* WordSuggestionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordSuggestionsView.h; sourceTree = "<group>"; };
 		74202679120B5F83002FC0E5 /* WordSuggestionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordSuggestionsView.m; sourceTree = "<group>"; };
@@ -178,21 +174,19 @@
 		745CCA83120877830019FECD /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		745CCA85120877830019FECD /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		745CCA86120877830019FECD /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		745CCA9F120879340019FECD /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
-		745CCAA0120879340019FECD /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		745CCA9F120879340019FECD /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../Model.h; sourceTree = "<group>"; };
+		745CCAA0120879340019FECD /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = ../Model.m; sourceTree = "<group>"; };
 		745CCB0F120882D10019FECD /* phrases.sqlite3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phrases.sqlite3; sourceTree = "<group>"; };
-		745CCB891208A8570019FECD /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResult.m; sourceTree = "<group>"; };
-		745CCB8A1208A8570019FECD /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResult.h; sourceTree = "<group>"; };
+		745CCB891208A8570019FECD /* SearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResult.m; path = ../SearchResult.m; sourceTree = "<group>"; };
+		745CCB8A1208A8570019FECD /* SearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResult.h; path = ../SearchResult.h; sourceTree = "<group>"; };
 		745CCBD51208B9440019FECD /* phrases.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = phrases.txt; path = phrases/phrases.txt; sourceTree = "<group>"; };
 		74A1CF1F1209BE4B000A6138 /* settings_tab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings_tab_icon.png; path = media/settings_tab_icon.png; sourceTree = "<group>"; };
 		74A1CF451209C08D000A6138 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		74A1CF461209C08D000A6138 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		74A1CF471209C08D000A6138 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		74A1CF471209C08D000A6138 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Classes/SettingsViewController.xib; sourceTree = "<group>"; };
 		74A1CFA51209C695000A6138 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		74A1CFA71209C76C000A6138 /* SearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultCell.h; sourceTree = "<group>"; };
 		74A1CFA81209C76C000A6138 /* SearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultCell.m; sourceTree = "<group>"; };
-		74A1D0D1120A0B9E000A6138 /* UICustomSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSearchBar.h; sourceTree = "<group>"; };
-		74A1D0D2120A0B9E000A6138 /* UICustomSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomSearchBar.m; sourceTree = "<group>"; };
 		74A1D150120A254A000A6138 /* cst_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cst_alloc.h; sourceTree = "<group>"; };
 		74A1D151120A254A000A6138 /* cst_audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cst_audio.h; sourceTree = "<group>"; };
 		74A1D152120A254A000A6138 /* cst_cart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cst_cart.h; sourceTree = "<group>"; };
@@ -391,10 +385,9 @@
 				74A1CFA81209C76C000A6138 /* SearchResultCell.m */,
 				74A1CF451209C08D000A6138 /* SettingsViewController.h */,
 				74A1CF461209C08D000A6138 /* SettingsViewController.m */,
-				74A1CF471209C08D000A6138 /* SettingsViewController.xib */,
 				742024F9120A470A002FC0E5 /* MultipleChoiceSettingsController.h */,
 				742024FA120A470A002FC0E5 /* MultipleChoiceSettingsController.m */,
-				742024FB120A470A002FC0E5 /* MultipleChoiceSettingsController.xib */,
+				742027D8120BC7B5002FC0E5 /* Data */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -425,21 +418,13 @@
 			isa = PBXGroup;
 			children = (
 				74A1D14D120A251A000A6138 /* TTS Engine */,
-				745CCB891208A8570019FECD /* SearchResult.m */,
-				745CCB8A1208A8570019FECD /* SearchResult.h */,
-				745CCA9F120879340019FECD /* Model.h */,
-				745CCAA0120879340019FECD /* Model.m */,
 				745CCA7F120877830019FECD /* DB */,
 				745CCA2312086F230019FECD /* sqlite-amalgamation-3_7_0 */,
-				32CA4F630368D1EE00C91783 /* PhraseTTS_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
-				74A1D0D1120A0B9E000A6138 /* UICustomSearchBar.h */,
-				74A1D0D2120A0B9E000A6138 /* UICustomSearchBar.m */,
-				742024B9120A3912002FC0E5 /* LLHUDStatusView.h */,
-				742024BA120A3912002FC0E5 /* LLHUDStatusView.m */,
 				742024AB120A367E002FC0E5 /* LoadingView.h */,
 				742024AC120A367E002FC0E5 /* LoadingView.m */,
 				74202552120A4E86002FC0E5 /* Constants.h */,
+				32CA4F630368D1EE00C91783 /* PhraseTTS_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -454,6 +439,8 @@
 				74A1CF1F1209BE4B000A6138 /* settings_tab_icon.png */,
 				745CCBD51208B9440019FECD /* phrases.txt */,
 				745CCB0F120882D10019FECD /* phrases.sqlite3 */,
+				74A1CF471209C08D000A6138 /* SettingsViewController.xib */,
+				742024FB120A470A002FC0E5 /* MultipleChoiceSettingsController.xib */,
 				2899E5210DE3E06400AC0155 /* PhraseTTSViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* PhraseTTS-Info.plist */,
@@ -470,6 +457,17 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		742027D8120BC7B5002FC0E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				745CCB8A1208A8570019FECD /* SearchResult.h */,
+				745CCB891208A8570019FECD /* SearchResult.m */,
+				745CCA9F120879340019FECD /* Model.h */,
+				745CCAA0120879340019FECD /* Model.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		745CCA2312086F230019FECD /* sqlite-amalgamation-3_7_0 */ = {
@@ -833,7 +831,6 @@
 				745CCB8B1208A8580019FECD /* SearchResult.m in Sources */,
 				74A1CF481209C08D000A6138 /* SettingsViewController.m in Sources */,
 				74A1CFA91209C76C000A6138 /* SearchResultCell.m in Sources */,
-				74A1D0D3120A0B9E000A6138 /* UICustomSearchBar.m in Sources */,
 				74A1D1FC120A254E000A6138 /* au_none.c in Sources */,
 				74A1D1FD120A254E000A6138 /* au_streaming.c in Sources */,
 				74A1D1FE120A254E000A6138 /* audio.c in Sources */,
@@ -931,7 +928,6 @@
 				74A1D25B120A254E000A6138 /* usenglish.c in Sources */,
 				74A1D25E120A255A000A6138 /* FliteTTS.m in Sources */,
 				742024AD120A367E002FC0E5 /* LoadingView.m in Sources */,
-				742024BB120A3912002FC0E5 /* LLHUDStatusView.m in Sources */,
 				742024FC120A470A002FC0E5 /* MultipleChoiceSettingsController.m in Sources */,
 				7420267A120B5F83002FC0E5 /* WordSuggestionsView.m in Sources */,
 			);

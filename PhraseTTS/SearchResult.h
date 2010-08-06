@@ -26,16 +26,13 @@
 @property (nonatomic,retain) NSString * body;
 
 -(void) incrementUsesAndSave;
-
 -(BOOL) insertIntoDb;
-//-(BOOL) insertIntoUsedPhrasesTable;
-
+-(BOOL) checkIfExistsAndPopulateIfSo;
 -(BOOL) removeFromDb;
 
 +(SearchResult*) searchResultFromResultSet:(FMResultSet*) rs;
 
 +(NSArray*) sortedSearchForQuery:(NSString*)query;
-//+(NSArray*) sortedSearchFromUsedPhrases:(NSString*)query;
 +(NSArray*) getTopUsedPhrases;
 +(NSArray*) getWordCompletions:(NSString*)word;
 

@@ -21,6 +21,40 @@
 
 @synthesize rowid , body , uses;
 
+-(BOOL) checkIfExistsAndPopulateIfSo {
+
+	BOOL exists = NO;
+	
+	FMDatabase * db = [Model instance].db;
+	
+	NSString * noPunc = [[self.body componentsSeparatedByCharactersInSet:[NSCharacterSet punctuationCharacterSet]] componentsJoinedByString:@""];
+	
+	// SELECT phrases.rowid, phrases.body, used_phrases.uses FROM phrases LEFT OUTER JOIN used_phrases ON phrases.rowid = used_phrases.rowid WHERE phrases.no_punc_body MATCH ? ORDER BY used_phrases.uses DESC;
+	FMResultSet *rs = [db executeQuery:@"SELECT rowid FROM phrases WHERE no_punc_body = ?;" , noPunc ];
+	
+	int _rowid = 0;// = [db lastInsertRowId];
+	
+	while ([rs next]) {
+		
+		_rowid = [rs intForColumn:@"rowid"];
+		exists = YES;
+		
+	}
+	[rs close];
+	
+	self.rowid = _rowid;
+	
+	
+	rs = [db executeQuery:@"SELECT uses FROM used_phrases WHERE rowid = ?;" , [NSNumber numberWithInt:self.rowid] ];
+	
+	while ([rs next]) {
+		self.uses = [rs intForColumn:@"uses"];
+	}
+	[rs close];
+	
+	return exists;
+	
+}
 
 -(BOOL) insertIntoDb {
 	
@@ -29,7 +63,7 @@
 	//NSString * noPunc = [self.body stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@",.'?!@#$%^&*()-+\"\/><:;"]];
 	NSString * noPunc = [[self.body componentsSeparatedByCharactersInSet:[NSCharacterSet punctuationCharacterSet]] componentsJoinedByString:@""];
 							   
-	//NSLog(@"%@" , noPunc );
+	//NSLog(@"%@" , noPunc )
 	
 	[db executeUpdate:@"INSERT INTO phrases(body, no_punc_body) VALUES(?, ?);" , self.body , noPunc ];
 

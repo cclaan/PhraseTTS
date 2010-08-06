@@ -9,6 +9,13 @@
 #import "WordSuggestionsView.h"
 #import "SearchResult.h"
 
+@interface WordSuggestionsView()
+
+-(void) removeAllButtons;
+
+@end
+
+
 @implementation WordSuggestionsView
 
 
@@ -50,7 +57,7 @@
 	
 	for (NSString*s in possibleCompletions) {
 		
-		NSLog(@"WorD: %@ " , s);
+		//NSLog(@"WorD: %@ " , s);
 		
 		UIButton * button = nil;
 		
